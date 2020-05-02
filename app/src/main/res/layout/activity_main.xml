@@ -13,33 +13,48 @@
         android:layout_height="match_parent">
 
         <TimePicker
-            android:layout_width="299dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="80dp"
+            android:id="@+id/timePicker"
+            android:layout_width="434dp"
+            android:layout_height="403dp"
+            android:layout_marginBottom="340dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/ReminderEditText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:id="@+id/RemindoText"
+            android:layout_width="389dp"
+            android:layout_height="203dp"
+            android:layout_marginTop="22dp"
             android:ems="10"
             android:hint="Enter reminder here"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintTop_toBottomOf="@+id/timePicker" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="129dp"
-            android:layout_height="125dp"
+        <ImageButton
+            android:id="@+id/remindoButton"
+            android:layout_width="226dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="172dp"
+            android:layout_marginRight="172dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RemindoText"
             app:srcCompat="@drawable/Remind0Logo" />
+
+        <Button
+            android:id="@+id/unRemindoButton"
+            android:layout_width="118dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="unremind0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RemindoText" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
