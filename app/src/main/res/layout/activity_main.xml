@@ -14,46 +14,44 @@
 
         <TimePicker
             android:id="@+id/timePicker"
-            android:layout_width="434dp"
-            android:layout_height="403dp"
-            android:layout_marginBottom="340dp"
+            android:layout_width="421dp"
+            android:layout_height="363dp"
+            android:layout_marginBottom="68dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
-            android:id="@+id/RemindoText"
-            android:layout_width="389dp"
-            android:layout_height="203dp"
-            android:layout_marginTop="22dp"
-            android:ems="10"
-            android:hint="Enter reminder here"
-            android:inputType="textLongMessage"
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="511dp"
+            android:layout_height="345dp"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toTopOf="@+id/timePicker"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-        <Button
-            android:id="@+id/unRemindoButton"
-            android:layout_width="118dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="21dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:text="unremind0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/RemindoText" />
-
-        <ImageButton
-            android:id="@+id/remindoButton"
-            android:layout_width="203dp"
-            android:layout_height="96dp"
-            android:layout_marginStart="21dp"
-            android:layout_marginLeft="21dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/remindlogo" />
+
+        <TextView
+            android:id="@+id/stuff"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:text="Welcome to Remind0! Please enter the time when you wish to be reminded of your task below."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timePicker" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
