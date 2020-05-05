@@ -13,7 +13,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import java.util.Calendar;
-
+//Credit to https://www.youtube.com/watch?v=44Nr3AT7fF4
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private int reminderValue = 1;
